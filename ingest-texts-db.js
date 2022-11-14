@@ -1,7 +1,7 @@
 const keytar = require('keytar')
 const os = require('os')
 const path = require('path')
-const bs = require('better-sqlite')
+const bs = require('better-sqlite') // https://github.com/signalapp/better-sqlite3
 
 async function main() {
   const key = await keytar.getPassword('com.kishanbagaria.jack', 'etilqs_key')

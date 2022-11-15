@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "better-sqlite": "https://github.com/signalapp/better-sqlite3",
+    "better-sqlite": "git@github.com:signalapp/better-sqlite3.git",
     "keytar": "^7.9.0"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }

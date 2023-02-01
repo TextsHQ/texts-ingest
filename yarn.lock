@@ -184,16 +184,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:^21.2.3":
-  version: 21.2.3
-  resolution: "electron@npm:21.2.3"
+"electron@npm:^21.4.1":
+  version: 21.4.1
+  resolution: "electron@npm:21.4.1"
   dependencies:
     "@electron/get": ^1.14.1
     "@types/node": ^16.11.26
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
-  checksum: 9e871c38a07fb9bb4b2d1d7957c5b39f5b5acab95746c0cbcc4a8f4b5c22a4a05d96e340584aa58aa58903d625174dbbe6834da3d4c5cf6d8246a0ad9225ba15
+  checksum: 61c91bcdba41f90acd486d7c413c25a495994b4f46033fd7ea74886a26fe237967c241141d293e77e9d2d7ab671727860c8e7b8a6b198f5f9ec7395b412da4ce
   languageName: node
   linkType: hard
 
@@ -607,7 +607,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    electron: ^21.2.3
+    electron: ^21.4.1
   languageName: unknown
   linkType: soft
 

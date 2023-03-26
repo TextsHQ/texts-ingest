@@ -1,7 +1,7 @@
 const os = require('os')
 const path = require('path')
 const keytar = require('keytar')
-const bs = require('better-sqlite') // https://github.com/signalapp/better-sqlite3
+const bs = require('@signalapp/better-sqlite3') // https://github.com/signalapp/better-sqlite3
 
 let db
 async function getUnlockedDb() {

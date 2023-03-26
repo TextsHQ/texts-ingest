@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "electron": "^21.4.1"
+    "electron": "^23.2.0"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.5.0"
 }

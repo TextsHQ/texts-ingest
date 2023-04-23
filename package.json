@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "electron": "^23.2.0"
+    "@signalapp/better-sqlite3": "^8.4.3",
+    "bun-repl": "^1.3.3",
+    "electron": "^23.2.0",
+    "keytar": "^7.9.0"
   },
   "packageManager": "yarn@3.5.0"
 }

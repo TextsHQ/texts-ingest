@@ -4,14 +4,22 @@ const keytar = require('keytar')
 const bs = require('@signalapp/better-sqlite3') // https://github.com/signalapp/better-sqlite3
 
 let db
-async function getUnlockedDb() {
-  if (db) return db
 
+async function getPassword() {
   const key = await keytar.getPassword('com.kishanbagaria.jack', 'etilqs_key')
   const keyBuffer = Buffer.from(key, 'base64')
   const keyHex = keyBuffer.toString('hex')
+  return keyHex
+}
 
-  db = bs(path.join(os.homedir(), 'Library/Application Support/jack/.index.db'))
+async function getUnlockedDb() {
+  if (db) return db
+
+  const keyHex = await getPassword()
+
+  const dbPath = path.join(os.homedir(), 'Library/Application Support/jack/.index.db')
+  db = bs(dbPath)
+
   const pragmaKeySql = `PRAGMA key = "x'${keyHex}'";`
   db.exec(pragmaKeySql)
 

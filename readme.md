@@ -5,7 +5,7 @@ Scripts to read local Texts.app data.
 ### Usage
 
 ```
-git clone https://github.com/KishanBagaria/texts-ingest
+git clone https://github.com/TextsHQ/texts-ingest
 yarn
 node db.js
 ```
